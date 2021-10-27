@@ -1,30 +1,59 @@
 <script>
-	export let name;
+	
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+    <div class="wrapper">
+        <div class="spaceSidebar">
+            <div class="profile">
+                <img src="Placeholders/placeholder.png" alt="Profile Picture">
+                <h3>Station</h3>
+                <p>Developer</p>
+            </div>
+        </div>
+    </div>
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+    .spaceSidebar {
+        background: rgb(5, 68, 104);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 225px;
+        height: 100%;
+        padding: 20px 0;
+        transition: all 0.5s ease;
+    }
+    .nolist {
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
+.wrapper .spaceSidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+.wrapper .spaceSidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.wrapper .spaceSidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+
 </style>
